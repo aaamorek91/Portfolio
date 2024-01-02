@@ -1,0 +1,19 @@
+{
+  "name": "11ty-not-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "NODE_ENV=production npx @11ty/eleventy --pathprefix 'Portfolio'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  },
+  "files.associations": {
+    "*.njk": "nunjucks"
+  }
+}
