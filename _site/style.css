@@ -35,7 +35,7 @@ li:hover {
   opacity: 0.5;
   color: #855564;
   font-weight: bold;
-}åß
+}
 
 /*NAVBAR BOOTSTRAP END*/
 
@@ -84,7 +84,7 @@ li:hover {
   border-radius: 10%;
   height: 500px;
   box-shadow: 25px 30px #b8c4cb;
-  margin: 20px;
+  margin-top: 60px;
 }
 
 .zoom {
@@ -206,14 +206,6 @@ h2 {
 box-shadow: 4px 7px 11px 8px rgba(0,0,0,0.64);
 }
 
-/*.h4-form {
-  font-family: "Poppins", sans-serif;
-  font-size: 30px !important;
-  color: #215d6c;
-  text-align: center;
-  padding: 30px;
-}
-
 input[type="text"],
 select,
 textarea {
@@ -240,17 +232,17 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, add a darker green lighter */
 input[type="submit"]:hover {
-  background-color: #dfe6ee;
+  background-color: #fff;
 }
 
 .form-container {
   background-color: #215d6c;
 }
 
-/*form {
+form {
   padding-top: 10px;
   padding-bottom: 10px;
-}*/
+}
 
 /* FOOTER start*/
 footer {

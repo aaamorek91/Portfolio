@@ -61,25 +61,13 @@
 <!--NAV BAR BOOTSRTAP END -->
     
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .form-container{
   padding: 20px;
   margin: 20px;
   display: flex; 
 }
 
-h4 {
-  color:white; 
-  text-align: center;
-}
-  #img-container {
+  #form-img-container {
     flex: 1;
     margin-right: 20px; /* Adjust as needed for spacing */
   }
@@ -95,19 +83,24 @@ h4 {
     padding-top: 150px; 
   }
 
-  main {
+  .form-page {
     flex: 1;
+    margin-top: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 </style> 
 
-<main>
+<main class= "form-page">
 <!-- Contact me section -->
 <section class="form-container" id="contact">
 
   <!-- Bootstrap grid for image and form -->
   <div class="row">
      <!-- Image column (col-md-6 for medium and larger screens) -->
-      <div class="col-md-6" id="img-container">
+      <div class="col-md-6" id="form-img-container">
         <img src="/assets/img/bundo-kim-S-TcfjrYVKo-unsplash.jpg" alt="Post" class="img-fluid" id="form-img">
       </div>
 
