@@ -60,51 +60,111 @@
 
 <!--NAV BAR BOOTSRTAP END -->
     
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+section{
+  padding: 20px;
+  margin: 20px;
+  display: flex; 
+}
+
+h4 {
+  color:white; 
+  text-align: center;
+}
+  #img-container {
+    flex: 1;
+    margin-right: 20px; /* Adjust as needed for spacing */
+  }
+
+  #form-img {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    width: 100%;
+    color: white;
+    padding-top: 150px; 
+  }
+
+  main {
+    flex: 1;
+  }
+</style> 
+
+<main>
 <!-- Contact me section -->
-<article class="form-container" id="contact">
-  <!-- H4 of Form section-->
-  <h4 class="h4-form">Let's chat!</h4>
+<section class="form-container" id="contact">
 
-  <!--Form-->
-  <section class="container">
-    <form netlify>
-      <label for="fname">First Name</label>
-      <input
-        type="text"
-        id="fname"
-        name="firstname"
-        placeholder="Your name.."
-      />
+  <!-- Bootstrap grid for image and form -->
+  <div class="row">
+     <!-- Image column (col-md-6 for medium and larger screens) -->
+      <div class="col-md-6" id="img-container">
+        <img src="/assets/img/bundo-kim-S-TcfjrYVKo-unsplash.jpg" alt="Post" class="img-fluid" id="form-img">
+      </div>
 
-      <label for="lname">Last Name</label>
-      <input
-        type="text"
-        id="lname"
-        name="lastname"
-        placeholder="Your last name.."
-      />
+    <!-- Form column (col-md-6 for medium and larger screens) -->
+    <div class="col-md-6">
+      <!-- Form -->
+      <form class="row g-3">
+        <!-- Form elements go here -->
+        <div class="col-md-6">
+          <label for="inputName4" class="form-label">Name</label>
+          <input type="name" class="form-control" id="inputName4">
+        </div>
 
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="england">England</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
+        <div class="col-md-6">
+          <label for="inputSurename4" class="form-label">Surename</label>
+          <input type="surename" class="form-control" id="inputSurename4">
+        </div>
 
-      <label for="subject">Subject</label>
-      <textarea
-        id="subject"
-        name="subject"
-        placeholder="Write something.."
-        style="height: 200px"
-      ></textarea>
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
 
-      <input type="submit" value="Submit" />
-    </form>
-    <!-- Form End-->
-  </section>
-  <!-- Contact me section END-->
-</article>
+        <div class="col-md-6">
+          <label for="inputPhone4" class="form-label">Phone</label>
+          <input type="phone" class="form-control" id="inputPhone4">
+        </div>
+
+        <div class="col-12">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message.."
+            style="height: 200px; width: 100%"
+          ></textarea>
+        </div>
+
+        <div class="col-12">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Terms and conditions
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<!-- Contact me section END -->
+
       <!-- FOOTER START-->
 <footer>
     <section class="social-media-container">
