@@ -54,22 +54,22 @@ layout: 'base.njk'
         <!-- Form elements go here -->
         <div class="col-md-6">
           <label for="inputFirstName4" class="form-label">First name</label>
-          <input type="text" name="first name" class="form-control" id="inputFirstName4">
+          <input type="text" name="first name" class="form-control" id="inputFirstName4" required>
         </div>
 
         <div class="col-md-6">
           <label for="inputSurname4" class="form-label">Surname</label>
-          <input type="text" name="surname" class="form-control" id="inputSurname4">
+          <input type="text" name="surname" class="form-control" id="inputSurname4" required>
         </div>
 
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" name="email" class="form-control" id="inputEmail4">
+          <input type="email" name="email" class="form-control" id="inputEmail4" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
         </div>
 
         <div class="col-md-6">
           <label for="inputPhone4" class="form-label">Phone</label>
-          <input type="tel" name="phone" class="form-control" id="inputPhone4">
+          <input type="tel" name="phone" class="form-control" id="inputPhone4" required minlength="10">
         </div>
 
         <div class="col-12">
