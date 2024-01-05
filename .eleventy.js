@@ -3,8 +3,8 @@ module.exports = function (eleventyConfig) {
 
   // .eleventy.js
   eleventyConfig.setTemplateFormats(["njk", "html", "liquid", "md"]);
-  eleventyConfig.addPassthroughCopy("src/style.css");
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("/src/style.css");
+  eleventyConfig.addPassthroughCopy("/src/assets");
   
 
   return {
