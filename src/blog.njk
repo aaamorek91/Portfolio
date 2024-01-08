@@ -6,23 +6,73 @@ layout: 'base.njk'
 
 <style>
 .blog-container {
-  margin: 0;
+  margin: 20px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   flex: 1;
 }
+.Hpost{
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center; 
+  color: #215d6c;
+    font-family: "Abril Fatface", serif;
+}
+
+.blog-header{
+text-align: center; 
+color: #215d6c;
+font-family: "Abril Fatface", serif;
+}
+
+.list-group-item,
+.pContent{
+  font-family: "Poppins", sans-serif;
+}
+
 
 </style>
+
 <main class="blog-container">
 <article class="blog-content">
-    <h1 class="blog-header"> A Peek into My Tip Calculation Journey </h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has bEver found yourself puzzled when calculating tips for your bills? I recently delved into simplifying this process by creating a straightforward JavaScript program. Let me walk you through what I did:<p>
+    <h1 class="blog-header"> A Peek into My Tip Calculation Ptogram </h1><br>
 
-         <p>The Code Breakdown<p>
+    <p class="pContent">Ever found yourself perplexed when totting up tips for your bills? I recently embarked on simplifying this process by creating a straightforward JavaScript program. Let me take you through what I did:<p><br>
 
-      
+    <p class= "Hpost">The Code Breakdown:<p><br>
+
+    <img class="img-thumbnail" src="/assets/img/b-post1.jpg"><br>
+
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">1. const preTip = 670;<br> I set a variable (preTip) to represent the amount before any tip is added. You can replace this with the actual total from your bill.</li>
+  <li class="list-group-item">2. const tipPercent = 10; <br> Here, I defined the tip percentage as 10%. Adjust this based on your preferred tipping rate.
+
+</li>
+  <li class="list-group-item">3. const tipAmount = (preTip * tipPercent) / 100;<br>
+Using a simple formula, I calculated the tip amount by multiplying the pre-tip total with the tip percentage and dividing by 100.</li>
+
+  <li class="list-group-item">4. const totalBill = preTip + tipAmount;<br>
+I then calculated the total bill amount by adding the pre-tip total and the calculated tip amount.</li>
+  <li class="list-group-item">5. console.log(...);<br>
+Finally, I used console.log to display the results. The total bill and tip amount are presented with a precision of two decimal places.</li>
+</ul>
+<br><br>
+
+<p class= "Hpost">Understanding the Output:</p><br>
+
+<img class="img-thumbnail" src="/assets/img/b-post2.jpg"><br>
+
+  <br><br>
+<p class= "Hpost">What's Next?</p><br>
+
+<p class="pContent">Feel free to customise the preTip and tipPercent variables with your own bill details. This simple JavaScript program serves as a quick and efficient way to calculate tips, making the bill-paying process a breeze.
+  <br><br></p>
+
+<p class= "Hpost">Happy coding!</p>
+
+
 
 </article>
 
